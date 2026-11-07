@@ -43,12 +43,25 @@ https://github.com/2026ak05257-afk/2026AK05257_ML-ASSIGNMENT2
 
 The repository contains the following files and folders:
 
-- `app.py` – Streamlit application source code.
-- `requirements.txt` – Required Python libraries and dependencies.
-- `README.md` – Project documentation and model comparison.
-- `test_data.csv` – Test dataset used for model evaluation.
-- `model/` – Saved trained classification models and StandardScaler.
-- `2026AK05257 ML_Assignment_2 Complete Code.ipynb` – Complete implementation, training, and evaluation of all five models.
+2026AK05257_ML-ASSIGNMENT2/
+│
+├── app.py              #Streamlit app source code
+│
+├── requirements.txt    #Required Python libraries and dependencies
+│
+├── README.md           #Project documentation and model comparison
+│
+├── test_data.csv       #Test dataset used for model evaluation
+│
+├── model/              #Saved trained classification models and StandardScaler
+│   ├── logistic_regression.pkl
+│   ├── decision_tree.pkl
+│   ├── knn.pkl
+│   ├── naive_bayes.pkl
+│   ├── support_vector_machine.pkl
+│   └── scaler.pkl
+│
+└── 2026AK05257_ML_Assignment_2_Complete_Code.ipynb    #Complete implementation, training, and evaluation of all five models
 
 ## 4. Models Used and Performance Comparison
 
