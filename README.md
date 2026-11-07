@@ -1,10 +1,8 @@
-# Breast Cancer Classification - Machine Assignment 2
 Name: Hariharan S  |  ID: 2026AK05257  |  Course: Machine Learning (M.Tech AIML)
 
 # Breast Cancer Classification – Machine Learning Assignment 2
 
-**Student Name:** Hariharan S  
-**BITS ID:** 2026AK05257  
+**Student Name:** Hariharan S  |  **BITS ID:** 2026AK05257  
 **Programme:** M.Tech (AIML)  
 **Course:** Machine Learning
 
