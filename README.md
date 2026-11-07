@@ -62,7 +62,8 @@ The repository contains the following files and folders:
 │   ├── support_vector_machine.pkl
 │   └── scaler.pkl
 │
-└── 2026AK05257_ML_Assignment_2_Complete_Code.ipynb    #Complete implementation, training, and evaluation of all five models
+└── 2026AK05257_ML_Assignment_2_Complete_Code.ipynb    
+                #Complete implementation, training, and evaluation of all five models
 ```
 
 ## 4. Models Used and Performance Comparison
