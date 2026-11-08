@@ -68,7 +68,7 @@ https://github.com/2026ak05257-afk/2026AK05257_ML-ASSIGNMENT2
 │   ├── support_vector_machine.pkl
 │   └── scaler.pkl
 │
-└── 2026AK05257_ML_Assignment_2_Complete_Code.ipynb
+└── 2026AK05257_ML_Assignment_2 Complete Code.ipynb
 ```
 
 ### File Description
