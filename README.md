@@ -68,7 +68,7 @@ https://github.com/2026ak05257-afk/2026AK05257_ML-ASSIGNMENT2
 │   ├── support_vector_machine.pkl
 │   └── scaler.pkl
 │
-└── 2026AK05257_ML_Assignment_2 Complete Code.ipynb
+└── 2026AK05257 ML_Assignment_2 Complete Code.ipynb
 ```
 
 ### File Description
@@ -80,7 +80,7 @@ https://github.com/2026ak05257-afk/2026AK05257_ML-ASSIGNMENT2
 | `README.md` | Project documentation, model comparison, and observations |
 | `test_data.csv` | Test dataset uploaded to the Streamlit application for evaluation |
 | `model/` | Saved trained classification models and the `StandardScaler` preprocessing artifact |
-| `2026AK05257_ML_Assignment_2_Complete_Code.ipynb` | Complete implementation, training, and evaluation of all five classification models |
+| `2026AK05257 ML_Assignment_2Complete Code.ipynb` | Complete implementation, training, and evaluation of all five classification models |
 
 **Note:** The folder and file names shown above should match the actual names in the GitHub repository. The scaler file is included because it is required to apply the same preprocessing during app-based evaluation.
 
