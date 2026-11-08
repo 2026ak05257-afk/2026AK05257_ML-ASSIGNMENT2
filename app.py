@@ -45,11 +45,22 @@ if uploaded_file is not None:
 
     # Predictions
     y_pred = model.predict(X_test_scaled)
+    # Calculate AUC Score
     try:
-        y_prob = model.predict_proba(X_test_scaled)[:, 1]
-        auc = roc_auc_score(y_test, y_prob)
-    except Exception:
-        auc = 0.0
+        if hasattr(model, "predict_proba"):
+            y_score = model.predict_proba(X_test_scaled)[:, 1]
+        elif hasattr(model, "decision_function"):
+            y_score = model.decision_function(X_test_scaled)
+        else:
+            y_score = None
+
+        if y_score is not None:
+            auc = roc_auc_score(y_test, y_score)
+        else:
+            auc = np.nan
+
+    except (ValueError, AttributeError, IndexError):
+        auc = np.nan
 
     # Calculate Metrics
     acc = accuracy_score(y_test, y_pred)
@@ -61,7 +72,8 @@ if uploaded_file is not None:
     st.write(f"### Evaluation Metrics for {model_name}")
     col1, col2, col3 = st.columns(3)
     col1.metric("Accuracy", f"{acc:.4f}")
-    col1.metric("AUC Score", f"{auc:.4f}")
+    auc_display = f"{auc:.4f}" if not np.isnan(auc) else "N/A"
+    col1.metric("AUC Score", auc_display)
     col2.metric("Precision", f"{prec:.4f}")
     col2.metric("Recall", f"{rec:.4f}")
     col3.metric("F1 Score", f"{f1:.4f}")
